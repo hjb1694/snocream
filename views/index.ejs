@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+        <title>SnoCream Knoxville</title>
+        <link rel="stylesheet" type="text/css" href="./style.css"/>
+    </head>
+    <body>
+            <header class="header">
+                <img class="logo" src="./snocream-logo-transparent.png"/>
+                <nav class="nav">
+                    <a href="./menu.html" class="nav__item">Menu</a>
+                    <a class="nav__item">About</a>
+                    <a class="nav__item">Offers</a>
+                </nav>
+            </header>
+            <section class="hero-section">
+                <div class="hero-section__content">
+                    <h1 class="hero-text">
+                        <div class="hero-text__sub hero-text__sub--1">Truly</div>
+                        <br/>
+                        <div class="hero-text__sub hero-text__sub--2">Delicious.</div>
+                    </h1>
+                    <a class="hero-btn">See Our Menu &rarr;</a>
+                </div> 
+            </section>
+            <div class="container">
+            <section class="briefing-section">
+                <h2 class="section-header">What is Sno Cream?</h2>
+                <p class="briefing-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Suspendisse dignissim libero non nisi sodales ornare. 
+                    Proin et sem id est feugiat bibendum id id ex. 
+                    Nulla consequat est ut lacus bibendum euismod. 
+                    Quisque in lorem vel ante ornare hendrerit at vitae mauris. 
+                    Integer interdum eget tellus id imperdiet. 
+                    Vestibulum pretium felis nec massa accumsan, et mollis dolor malesuada.
+                </p>
+            </section>
+            <section class="location-section">
+                <h2 class="section-header">Come See Us for a Unique Treat!</h2>
+                <div class="location-grid">
+                    <div class="location-grid__one">
+                        <div id="map"></div>
+                    </div>
+                    <div class="location-grid__two">
+                        <div class="card location-card">
+                            <h3 class="location-card-header">Address</h3>
+                            <div class="address">
+                                <p>Turkey Creek</p>
+                                <p>10911 Parkside Drive</p>
+                                <p>Knoxville, TN 37934</p>
+                                <p>865.000.0000</p>
+                            </div>
+                            <h3 class="location-card-header">Hours</h3>
+                            <div class="hours">
+                                <div><strong>Mon-Fri:</strong> 11AM-10PM</div>
+                                <div><strong>Sat-Sun:</strong> 11AM-9PM</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="two">
+            
+            <div class="two-grid">
+                <div class="two-grid__one">
+                    <div class="img-container img-container--1">
+                        
+                    </div>
+                </div>
+                <div class="two-grid__two">
+                    <div class="img-container img-container--2">
+                        
+                    </div>
+                </div>
+                <div class="two-grid__three">
+                    <div class="img-container img-container--3">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+        <script>
+            function initMap(){
+                // The location of Uluru
+                var uluru = {lat: 35.90344, lng: -84.146722};
+                // The map, centered at Uluru
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {zoom: 15, center: uluru});
+                // The marker, positioned at Uluru
+                var marker = new google.maps.Marker({position: uluru, map: map});
+            }
+        </script>
+         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxHlWziSJ69DLsRY-eHiEYDTDdyZyoua8&callback=initMap"
+        type="text/javascript"></script>
+    </body>
+</html>

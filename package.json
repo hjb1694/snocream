@@ -1,0 +1,29 @@
+{
+  "name": "snocream",
+  "version": "1.0.0",
+  "description": "A website for a client of mine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hjb1694/snocream.git"
+  },
+  "author": "Hayden Bradfield",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hjb1694/snocream/issues"
+  },
+  "homepage": "https://github.com/hjb1694/snocream#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "mongoose": "^5.7.13"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}
