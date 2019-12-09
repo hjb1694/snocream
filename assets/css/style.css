@@ -52,7 +52,7 @@ body{
 
 .hero-section{
     height:20rem;
-    background-image: url(./choco-mocha.jpg);
+    background-image: url(/img/choco-mocha.jpg);
     background-position:center;
     background-repeat:no-repeat;
     background-size:cover;
@@ -98,8 +98,8 @@ body{
 
 .briefing-section{
     background:#fff;
-    padding:2rem;
-    margin:2rem 0;
+    padding:4rem 2.5rem;
+    
 }
 
 .briefing-text{
@@ -116,23 +116,33 @@ body{
     margin-top:2rem;
     background:rgba(255,255,255,.8);
     box-shadow:0 0 1rem rgba(0,0,0,.8);
+    text-decoration:none;
 }
 
 
 .location-section{
     min-height:60vh;
     background:#fff;
-    padding:2rem;
+    padding:4rem 2.5rem;
+    background:#274869;
 }
+
 
 .section-header{
     font-size:4rem;
     font-weight:400;
     text-align:center;
     font-family: 'Lobster', cursive;
-    color:#778;
     transform:rotate(-2deg);
     text-shadow:0 0 1px rgba(0,0,0.24);
+}
+
+.briefing-section-header{
+    color:#777;
+}
+
+.location-section-header{
+    color:#fff;
 }
 
 .location-grid{
@@ -160,17 +170,28 @@ body{
     padding:1rem;
     border:1px solid #ccc;
     box-shadow:0 0 .5rem rgba(0,0,0,.24);
+    border-radius:1rem;
 }
 
 .card{
-    border:1px solid #ccc;
     box-shadow:0 0 .5rem rgba(0,0,0,.24);
-    background:#fafafa;
 }
+
+.offercard{
+    padding:1rem;
+    margin:1rem 0;
+}
+
+.offercard h2{
+    font-weight:normal;
+}
+
 
 .location-card{
     height:100%;
     padding:1rem;
+    background:#fff;
+    border-radius:1rem;
 }
 
 .location-card-header{
@@ -201,7 +222,7 @@ body{
 .two{
     min-height:40vh;
     background:#fff;
-    padding:2rem;
+    padding:6rem 2.5rem;
 }
 
 
@@ -218,13 +239,13 @@ body{
 }
 
 .img-container--1{
-    background-image:url('./kiwi_cream.jpg');
+    background-image:url('/img/kiwi_cream.jpg');
 }
 .img-container--2{
-    background-image:url('./oreo_cream.jpg');
+    background-image:url('/img/oreo_cream.jpg');
 }
 .img-container--3{
-    background-image:url('./snocream_img_1.jpg');
+    background-image:url('/img/snocream_img_1.jpg');
 }
 
 .home-img{
@@ -234,7 +255,7 @@ body{
     transform:scale(1.05);
 }
 
-.menu-header{
+.menu-header, .offers-header{
     height:8rem;
     background:#274869;
     position:relative;
@@ -245,7 +266,7 @@ body{
     background:#fff;
 }
 
-.menu-header__text{
+.menu-header__text, .offers-header__text{
     display:inline-block;
     font-size:4rem;
     font-family: 'Lobster';
@@ -335,35 +356,155 @@ body{
 }
 
 .img-thumb--choco-oreo{
-    background-image:url(./oreo-cream-thumbnail.jpg);
+    background-image:url(/img/oreo-cream-thumbnail.jpg);
 }
 
 .img-thumb--choco-banana{
-    background-image:url(./choco-banana-thumbnail.jpg);
+    background-image:url(/img/choco-banana-thumbnail.jpg);
 }
 
 .img-thumb--choco-mocha{
-    background-image:url(./choco-mocha-thumbnail.jpg);
+    background-image:url(/img/choco-mocha-thumbnail.jpg);
 }
 
 .img-thumb--choco-lover{
-    background-image:url(./choco-lover-thumbnail.jpg);
+    background-image:url(/img/choco-lover-thumbnail.jpg);
 }
 
 .img-thumb--strawberry-lover{
-    background-image:url(./strawberry_lover_thumbnail.jpg);
+    background-image:url(/img/strawberry_lover_thumbnail.jpg);
 }
 
 .img-thumb--blueberry-lover{
-    background-image:url(./blueberry_lover_thumbnail.jpg);
+    background-image:url(/img/blueberry_lover_thumbnail.jpg);
 }
 
 .img-thumb--sweet-honeydew{
-    background-image:url(./sweet_honeydew_thumbnail.jpg);
+    background-image:url(/img/sweet_honeydew_thumbnail.jpg);
 }
 
 .img-thumb--peach-blossum{
-    background-image:url(./peach_blossum_thumbnail.jpg);
+    background-image:url(/img/peach_blossum_thumbnail.jpg);
+}
+
+.login-form{
+    max-width:40rem;
+    border:1px solid #ccc;
+    margin:2rem auto;
+    padding:1rem;
+    border-radius:.5rem;
+}
+
+.form-group{
+    margin:1rem 0;
+}
+
+.label{
+    display:block;
+    margin-bottom:3px;
+    font-size:1.2rem;
+    color:#676767;
+}
+
+.text-input{
+    display:block;
+    padding:.4rem;
+    font-size:1.6rem;
+    font-family:inherit;
+    outline:none;
+    border-radius:.5rem;
+    border:1px solid #ccc;
+    width:100%;
+}
+
+.login-form__heading{
+    font-weight:normal;
+    color:#676767;
+}
+
+.text-input:focus{
+    border:1px solid rgb(92, 196, 144);
+}
+
+.btn{
+    font-size:1.6rem;
+    padding:1rem;
+    border:0;
+    border-radius:.5rem;
+    cursor:pointer;
+}
+
+.btn--green{
+    background:rgb(92, 196, 144);
+    color:#fff;
+}
+
+.btn--red{
+    background:#FF0000;
+    color:#fff;
+}
+
+#errbox{
+    color:red;
+    font-size:1.4rem;
+}
+
+.createofferform{
+    padding:1rem;
+    border:1px solid #ccc;
+    margin:2rem 0;
+}
+
+.offerlist{
+    margin:2rem 0;
+}
+
+.footer{
+    min-height:10rem;
+    background:#274869;
+    color:#fff;
+    padding:2.5rem;
+    text-align:center;
+    font-size:1.2rem;
+}
+
+
+.offers-list{
+    padding:4rem 2rem;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.no-offers-card{
+    margin:0 auto;
+    padding:1rem;
+    background:#eee;
+    color:#bbb;
+    font-size:1.4rem;
+    box-shadow:0 0 .5rem rgba(0,0,0,.24);
+}
+
+.offer-card{
+    flex-basis:30rem;
+    box-shadow:0 0 .5rem rgba(0,0,0,.24);
+    padding:1.5rem;
+    min-height:20rem;
+}
+
+.offer-card__headline{
+    font-size:1.6rem;
+}
+
+.offer-card__description{
+    font-size:1.4rem;
+    margin-top:1rem;
+}
+
+.offer-card__expires{
+    font-size:1.2rem;
+    margin-top:1.5rem;
 }
 
 @media (max-width:400px){

@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <title>SnoCream Knoxville</title>
-        <link rel="stylesheet" type="text/css" href="./style.css"/>
-    </head>
+    <%- include('./partials/head.ejs') %>
     <body>
-            <header class="header">
-                <img class="logo" src="./snocream-logo-transparent.png"/>
-                <nav class="nav">
-                    <a href="./menu.html" class="nav__item">Menu</a>
-                    <a class="nav__item">About</a>
-                    <a class="nav__item">Offers</a>
-                </nav>
-            </header>
+            <%- include('./partials/header.ejs') %>
             <section class="hero-section">
                 <div class="hero-section__content">
                     <h1 class="hero-text">
@@ -22,24 +10,25 @@
                         <br/>
                         <div class="hero-text__sub hero-text__sub--2">Delicious.</div>
                     </h1>
-                    <a class="hero-btn">See Our Menu &rarr;</a>
+                    <a href="/menu" class="hero-btn">See Our Menu &rarr;</a>
                 </div> 
             </section>
-            <div class="container">
             <section class="briefing-section">
-                <h2 class="section-header">What is Sno Cream?</h2>
-                <p class="briefing-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse dignissim libero non nisi sodales ornare. 
-                    Proin et sem id est feugiat bibendum id id ex. 
-                    Nulla consequat est ut lacus bibendum euismod. 
-                    Quisque in lorem vel ante ornare hendrerit at vitae mauris. 
-                    Integer interdum eget tellus id imperdiet. 
-                    Vestibulum pretium felis nec massa accumsan, et mollis dolor malesuada.
-                </p>
+                <div class="container">
+                    <h2 class="section-header briefing-section-header">What is Sno Cream?</h2>
+                    <p class="briefing-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Suspendisse dignissim libero non nisi sodales ornare. 
+                        Proin et sem id est feugiat bibendum id id ex. 
+                        Nulla consequat est ut lacus bibendum euismod. 
+                        Quisque in lorem vel ante ornare hendrerit at vitae mauris. 
+                        Integer interdum eget tellus id imperdiet. 
+                        Vestibulum pretium felis nec massa accumsan, et mollis dolor malesuada.
+                    </p>
+                </div>
             </section>
             <section class="location-section">
-                <h2 class="section-header">Come See Us for a Unique Treat!</h2>
+                <h2 class="section-header location-section-header">Come See Us for a Unique Treat!</h2>
                 <div class="location-grid">
                     <div class="location-grid__one">
                         <div id="map"></div>
@@ -82,7 +71,11 @@
                 </div>
             </div>
         </section>
-        </div>
+        <footer class="footer">
+            <p><small>Made with &hearts; by Hayden Bradfield</small></p>
+            <p>&copy; 2019 SnoCream</p>
+
+        </footer>
         <script>
             function initMap(){
                 // The location of Uluru
