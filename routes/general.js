@@ -10,7 +10,16 @@ router.get('/', (req,res) => {
 
 router.get('/menu', (req,res) => {
 
-    res.render('menu');
+    const snocreamsPath = path.join(__dirname, "..", "database", "snocreams.json");
+
+    const snocreamsJSON = fs.readFileSync(snocreamsPath);
+
+    const snocreamsDecoded = JSON.parse(snocreamsJSON);
+
+
+    res.render('menu', {
+        snocreams : snocreamsDecoded
+    });
 
 });
 

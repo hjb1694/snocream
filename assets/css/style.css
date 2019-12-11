@@ -355,38 +355,6 @@ body{
     color:red;
 }
 
-.img-thumb--choco-oreo{
-    background-image:url(/img/oreo-cream-thumbnail.jpg);
-}
-
-.img-thumb--choco-banana{
-    background-image:url(/img/choco-banana-thumbnail.jpg);
-}
-
-.img-thumb--choco-mocha{
-    background-image:url(/img/choco-mocha-thumbnail.jpg);
-}
-
-.img-thumb--choco-lover{
-    background-image:url(/img/choco-lover-thumbnail.jpg);
-}
-
-.img-thumb--strawberry-lover{
-    background-image:url(/img/strawberry_lover_thumbnail.jpg);
-}
-
-.img-thumb--blueberry-lover{
-    background-image:url(/img/blueberry_lover_thumbnail.jpg);
-}
-
-.img-thumb--sweet-honeydew{
-    background-image:url(/img/sweet_honeydew_thumbnail.jpg);
-}
-
-.img-thumb--peach-blossum{
-    background-image:url(/img/peach_blossum_thumbnail.jpg);
-}
-
 .login-form{
     max-width:40rem;
     border:1px solid #ccc;
@@ -505,6 +473,20 @@ body{
 .offer-card__expires{
     font-size:1.2rem;
     margin-top:1.5rem;
+}
+
+.admin-menuitem-card{
+    padding:1rem;
+    margin:1rem auto;
+    display:flex;
+}
+
+.admin-menuitem-card__img{
+    width:5rem;
+}
+
+.admin-menuitem-card__desc{
+    font-size:1.4rem;
 }
 
 @media (max-width:400px){

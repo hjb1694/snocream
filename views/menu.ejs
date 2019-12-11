@@ -12,152 +12,26 @@
                     Sno Creams
                 </h2>
                 <div class="menu-subsection__list">
+                    <% if(!snocreams.length){ %>
+
+                        <h2>Nothing to see just yet...</h2>
+
+                    <% }else{ 
+                        for(let item of snocreams){
+                    %>
+                        
                     <div 
                     class="menu-tile"
-                    data-description="Chocolate sno cream, fresh banana, chocolate syrup, whip cream"
+                    data-description="<%= item.description %>"
                     >
-                        <div class="menu-tile__img img-thumb--choco-banana"></div>
+                        <div class="menu-tile__img" style="background-image:url(<%= item.image %>);"></div>
                         <div class="menu-tile__desc">
-                            Choco Banana
+                            <%= item.name %>
                         </div>
                     </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="Chocolate sno cream, crushed oreo, chocolate syrup, whip cream"
-                    >
-                        <div class="menu-tile__img img-thumb--choco-oreo"></div>
-                        <div class="menu-tile__desc">
-                            Choco Oreo
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="mocha sno cream, chocolate malt powder, chocolate syrup, whip cream"
-                    >
-                        <div class="menu-tile__img img-thumb--choco-mocha"></div>
-                        <div class="menu-tile__desc">
-                            Choco Mocha
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="chocolate snow, chocolate syrup, condensed milk, chocolate chips, mini chocolate chips, malt balls, 
-                    chocolate flakes, chocolate malt powder, cream cheese whip"
-                    >
-                        <div class="menu-tile__img img-thumb--choco-lover"></div>
-                        <div class="menu-tile__desc">
-                            Choco Lover
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="strawberry snow, strawberry syrup, condensed milk, strawberry jelly, strawberry slices, cream cheese whip"
-                    >
-                        <div class="menu-tile__img img-thumb--strawberry-lover"></div>
-                        <div class="menu-tile__desc">
-                            Strawberry Lover
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="pineapple coconut snow, pineapple syrup, coconut syrup, condensed milk, 
-                    pineapple jelly, pineapple chunks, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Pineapple Coco
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="vanilla snow, kiwi syrup, condensed milk, kiwi jelly, golden kiwi slices, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Golden Kiwi
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="mango snow, mango syrup, condensed milk, mango jelly, mango chunks, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Mango Delight
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="vanilla snow, caramel syrup, condensed milk, cantaloupe balls, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Amber Crush
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="honeydew snow, honeydew syrup, condensed milk, honeydew jelly, honeydew balls, cream cheese whip"
-                    >
-                        <div class="menu-tile__img img-thumb--sweet-honeydew"></div>
-                        <div class="menu-tile__desc">
-                            Honey Dew
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="milk snow, peach syrup, condensed milk, peach jelly, peach chunks, cream cheese whip"
-                    >
-                        <div class="menu-tile__img img-thumb--peach-blossum"></div>
-                        <div class="menu-tile__desc">
-                            Peach Blossom
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="milk snow, blueberry syrup, condensed milk, blueberry jelly, blueberries, cream cheese whip"
-                    >
-                        <div class="menu-tile__img img-thumb--blueberry-lover"></div>
-                        <div class="menu-tile__desc">
-                            Blueberry Lover
-                        </div>
-                    </div>
-                    <div
-                     class="menu-tile"
-                     data-description="milk snow, caramel syrup, condensed milk, red bean paste, peanut butter powder, cream cheese whip"
-                     >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Red Bean on Snow
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="taro snow, caramel syrup, condensed milk, red bean paste, peanut butter powder, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Sweet Purple Taro
-                        </div>
-                    </div>
-                    <div
-                    class="menu-tile"
-                    data-description="Thai tea snow, Thai tea syrup, condensed milk, Thai tea pudding, roasted almonds, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Thai Tea Almond
-                        </div>
-                    </div>
-                    <div 
-                    class="menu-tile"
-                    data-description="green tea snow, green tea syrup, condensed milk, green tea pudding, roasted almonds, matcha powder, cream cheese whip"
-                    >
-                        <div class="menu-tile__img"></div>
-                        <div class="menu-tile__desc">
-                            Green Tea Matcha
-                        </div>
-                    </div>
+
+                    <% }
+                    } %>
                 </div>
             </div>
         </section>
