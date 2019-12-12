@@ -252,6 +252,13 @@ router.post('/menu/snocreams/delete', isAuth, (req,res) => {
 
 });
 
+router.get('/menu/snocreams/add', isAuth, (req,res) => {
+
+    res.render('add-snocream');
+
+
+});
+
 
 
 

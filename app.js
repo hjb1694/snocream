@@ -24,4 +24,4 @@ app.use(require('./routes/general')); //general routes
 
 
 
-app.listen(PORT, HOST, () => console.log(`Listening on port ${PORT} on ${HOST}!`));
+app.listen(PORT, () => console.log(`Listening on port ${PORT} on ${HOST}!`));
